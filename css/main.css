@@ -552,6 +552,18 @@ img.moon-light{
 /* Scene 4 */
 .Scene-4 {
   background: #21146b;
+  min-height: 50vh;
+}
+
+.Scene-4 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Scene-4 img{
+  width: 50%;
 }
 
 
@@ -706,6 +718,18 @@ img.moon-light{
 }
 
 
+@media (max-width: 768px) {
+  .Scene-4 img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .Scene-4 img{
+    width: 100%;
+  }
+}
+
 /* Scene 6 */
 .Scene-6 {
   display: grid;
@@ -804,4 +828,8 @@ img.moon-light{
 /* Bug fix: Chrome Android 98.0.4758.87 */
 .Scene-2, .Scene-4, .Scene-6 {
   opacity: 0.9999999; /* force create stacking context */
+}
+
+.oculto{
+  display: none;
 }
